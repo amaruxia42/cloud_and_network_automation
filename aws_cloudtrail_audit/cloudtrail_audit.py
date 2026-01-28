@@ -1,6 +1,6 @@
 from typing import List
 from botocore.exceptions import  ClientError
-from shared.aws_clients import get_cloudtrail
+from shared.aws_clients import get_cloudtrail 
 from shared.report import AuditFinding, ServicesAuditReport
 from shared.logger import get_logger
 
