@@ -1,7 +1,0 @@
-[
-  "tests/cloudtrail/test_check_cloudtrail_exists.py::test_cloudtrail_exists_api_error",
-  "tests/cloudtrail/test_check_cloudtrail_exists.py::test_cloudtrail_exists_ok",
-  "tests/cloudtrail/test_check_cloudtrail_exists.py::test_cloudtrail_missing",
-  "tests/iam/test_check_iam_root_mfa.py::test_root_mfa_disabled",
-  "tests/iam/test_check_root_access_keys.py::test_root_no_access_keys"
-]

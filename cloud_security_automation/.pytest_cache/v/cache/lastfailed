@@ -1,5 +1,0 @@
-{
-  "tests/iam/test_check_iam_root_mfa.py::test_root_mfa_disabled": true,
-  "tests/cloudtrail/test_check_cloudtrail_exists.py::test_cloudtrail_exists_ok": true,
-  "tests/cloudtrail/test_check_cloudtrail_exists.py::test_cloudtrail_exists_api_error": true
-}
