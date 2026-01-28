@@ -1,0 +1,7 @@
+[
+  "test_check_iam_password_policy.py::test_check_iam_password_policy",
+  "test_check_iam_password_policy.py::test_password_policy_api_error",
+  "test_check_iam_password_policy.py::test_password_policy_missing",
+  "test_check_iam_password_policy.py::test_password_policy_non_compliant",
+  "test_check_iam_user_mfa.py::test_user_with_console_access_no_mfa"
+]

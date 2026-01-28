@@ -1,0 +1,6 @@
+{
+  "test_check_iam_password_policy.py::test_check_iam_password_policy": true,
+  "test_check_iam_password_policy.py::test_password_policy_non_compliant": true,
+  "test_check_iam_password_policy.py::test_password_policy_missing": true,
+  "test_check_iam_password_policy.py::test_password_policy_api_error": true
+}

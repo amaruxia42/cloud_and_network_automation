@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="26129718-fdc7-4d08-b8ae-42839a320ad3" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/aws_dynamodb_audit/dynamodb_audit.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/aws_ec2_audit/ec2_audit.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/aws_iam_audit/iam_audit.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="32vBL2557yf1SyqddCiHZSw9kXq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests for tests.iam.test_check_root_access_keys.test_root_no_access_keys.executor": "Run",
+    "Python tests.Python tests in test_check.py.executor": "Run",
+    "Python tests.Python tests in test_check_cloudtrail_exists.py.executor": "Run",
+    "Python tests.Python tests in test_check_iam_root_mfa.py.executor": "Run",
+    "Python tests.Python tests in test_vpc.py.executor": "Run",
+    "Python.ami_audit.executor": "Run",
+    "Python.audit_cli.executor": "Run",
+    "Python.aws_clients.executor": "Run",
+    "Python.checker.executor": "Run",
+    "Python.cloudtrail_audit.executor": "Run",
+    "Python.dynamodb_audit.executor": "Run",
+    "Python.ec2_audit.executor": "Run",
+    "Python.frameworks.executor": "Run",
+    "Python.iam_audit.executor": "Run",
+    "Python.report.executor": "Run",
+    "Python.s3_audit.executor": "Run",
+    "Python.s3_audit_bucket.executor": "Run",
+    "Python.test_check_iam_user_mfa.executor": "Run",
+    "Python.test_vpc.executor": "Run",
+    "Python.tester.executor": "Run",
+    "Python.vpc_audit.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "ai.playground.ignore.import.keys.banner.in.settings": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/amaru-xia/Documents/Cloud Projects/network_cloud_automation/cloud_security_automation",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "PyConsoleConfigurable.Python Console",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="cloud_security_automation" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="cloud_security_automation" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/aws_vpc_audit/tests/dynamodb" />
+      <recent name="$PROJECT_DIR$/aws_vpc_audit/tests/ec2" />
+      <recent name="$PROJECT_DIR$/aws_vpc_audit/tests/s3" />
+      <recent name="$PROJECT_DIR$/aws_vpc_audit/tests/iam" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/aws_ec2_audit" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/aws_vpc_audit/tests/iam" />
+      <recent name="$PROJECT_DIR$/aws_dynamodb_audit" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.checker">
+    <configuration name="checker" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cloud_security_automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/aws_iam_audit" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aws_ec2_audit/checker.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="iam_audit" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cloud_security_automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/aws_iam_audit" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aws_iam_audit/iam_audit.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_vpc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cloud_security_automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/shared" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shared/test_vpc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="vpc_audit" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cloud_security_automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/aws_vpc_audit" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aws_vpc_audit/vpc_audit.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.iam.test_check_root_access_keys.test_root_no_access_keys" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="cloud_security_automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.iam.test_check_root_access_keys.test_root_no_access_keys&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.checker" />
+        <item itemvalue="Python.iam_audit" />
+        <item itemvalue="Python tests.Python tests for tests.iam.test_check_root_access_keys.test_root_no_access_keys" />
+        <item itemvalue="Python.test_vpc" />
+        <item itemvalue="Python.vpc_audit" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-ca5e2b39c7df-6e1f45a539f7-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.29346.308" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26129718-fdc7-4d08-b8ae-42839a320ad3" name="Changes" comment="" />
+      <created>1758291105584</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1758291105584</updated>
+      <workItem from="1765402433006" duration="4542000" />
+      <workItem from="1765578267094" duration="1813000" />
+      <workItem from="1765624170930" duration="596000" />
+      <workItem from="1765736674013" duration="598000" />
+      <workItem from="1765791324288" duration="1238000" />
+      <workItem from="1766093127260" duration="76364000" />
+      <workItem from="1766270498399" duration="27017000" />
+      <workItem from="1766342292541" duration="4361000" />
+      <workItem from="1766409879510" duration="20646000" />
+      <workItem from="1766475409069" duration="16386000" />
+      <workItem from="1766497125033" duration="21622000" />
+      <workItem from="1766528531278" duration="371000" />
+      <workItem from="1766578256632" duration="47731000" />
+      <workItem from="1766755401484" duration="25337000" />
+      <workItem from="1766794932414" duration="46000" />
+      <workItem from="1766797774673" duration="84539000" />
+      <workItem from="1767198023165" duration="27295000" />
+      <workItem from="1767371894620" duration="13421000" />
+      <workItem from="1767398273623" duration="17325000" />
+      <workItem from="1767554406054" duration="44150000" />
+      <workItem from="1767715441659" duration="5732000" />
+      <workItem from="1767727416246" duration="29799000" />
+      <workItem from="1767967289113" duration="17886000" />
+      <workItem from="1768049150422" duration="34592000" />
+      <workItem from="1768238220646" duration="2522000" />
+      <workItem from="1768241947421" duration="62635000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/vpc/audit_vpc.py</url>
+          <line>80</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/vpc/audit_vpc.py</url>
+          <line>126</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/aws_s3_audit/s3_audit.py</url>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cloud_security_automation$test_check_iam_user_mfa.coverage" NAME="test_check_iam_user_mfa Coverage Results" MODIFIED="1767094081252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/iam" />
+    <SUITE FILE_PATH="coverage/cloud_security_automation$report.coverage" NAME="report Coverage Results" MODIFIED="1768332860828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/shared" />
+    <SUITE FILE_PATH="coverage/cloud_security_automation$ec2_audit.coverage" NAME="ec2_audit Coverage Results" MODIFIED="1768413879618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aws_ec2_audit" />
+    <SUITE FILE_PATH="coverage/cloud_security_automation$.coverage" NAME=" Coverage Results" MODIFIED="1768474659762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cloud_security_automation$checker.coverage" NAME="checker Coverage Results" MODIFIED="1768069273438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aws_iam_audit" />
+    <SUITE FILE_PATH="coverage/cloud_security_automation$ami_audit.coverage" NAME="ami_audit Coverage Results" MODIFIED="1765406566298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aws_ec2_audit" />
+    <SUITE FILE_PATH="coverage/cloud_security_automation$s3_audit.coverage" NAME="s3_audit Coverage Results" MODIFIED="1768414786368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aws_s3_audit" />
+    <SUITE FILE_PATH="coverage/cloud_security_automation$tester.coverage" NAME="tester Coverage Results" MODIFIED="1766524976991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aws_dynamodb_audit" />
+    <SUITE FILE_PATH="coverage/cloud_security_automation$test_vpc.coverage" NAME="test_vpc Coverage Results" MODIFIED="1767090116254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/shared" />
+    <SUITE FILE_PATH="coverage/cloud_security_automation$dynamodb_audit.coverage" NAME="dynamodb_audit Coverage Results" MODIFIED="1768340900689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aws_dynamodb_audit" />
+    <SUITE FILE_PATH="coverage/cloud_security_automation$vpc_audit.coverage" NAME="vpc_audit Coverage Results" MODIFIED="1768478729336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aws_vpc_audit" />
+    <SUITE FILE_PATH="coverage/cloud_security_automation$aws_clients.coverage" NAME="aws_clients Coverage Results" MODIFIED="1767013113745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/shared" />
+    <SUITE FILE_PATH="coverage/cloud_security_automation$iam_audit.coverage" NAME="iam_audit Coverage Results" MODIFIED="1768411108222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aws_iam_audit" />
+    <SUITE FILE_PATH="coverage/cloud_security_automation$audit_cli.coverage" NAME="audit_cli Coverage Results" MODIFIED="1767013262059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aws_s3_audit" />
+    <SUITE FILE_PATH="coverage/cloud_security_automation$cloudtrail_audit.coverage" NAME="cloudtrail_audit Coverage Results" MODIFIED="1768411410050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aws_cloudtrail" />
+    <SUITE FILE_PATH="coverage/cloud_security_automation$frameworks.coverage" NAME="frameworks Coverage Results" MODIFIED="1767859203989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/shared" />
+  </component>
+</project>
