@@ -77,7 +77,8 @@ network_and_cloud_automation/
 
 ```bash
 
-git clone [https://github.com/amaruxia42/cloud_and_network_automation.git](https://github.com/amaruxia42/cloud_and_network_automation.git)
+git clone https://github.com/amaruxia42/cloud_and_network_automation.git
+
 cd cloud_and_network_automation
 
 ```
