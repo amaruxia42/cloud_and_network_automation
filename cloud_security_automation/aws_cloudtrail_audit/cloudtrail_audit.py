@@ -49,7 +49,7 @@ def check_cloudtrail_exists(cloudtrail_client=None) -> List[AuditFinding]:
             AuditFinding(
                 service="CloudTrail",
                 check="CloudTrail Status",
-                check_key="does_trail_exist",
+                check_key="cloudtrail_exists",
                 resource="account",
                 status="FAIL",
                 severity="High",
@@ -257,8 +257,8 @@ def check_trail_kms_encryption(cloudtrail_client=None) -> List[AuditFinding]:
                     AuditFinding(
                         service="CloudTrail",
                         check="CloudTrail Encryption",
-                        check_key="encryption",
-                        resource=trail_name, 
+                        check_key="kms_encryption",
+                        resource=trail_name,
                         status="FAIL",
                         severity="Medium",
                         details=f"Trail '{trail_name}' is not encrypted with a KMS Key (using default SSE-S3).",
@@ -272,7 +272,7 @@ def check_trail_kms_encryption(cloudtrail_client=None) -> List[AuditFinding]:
             AuditFinding(
                 service="CloudTrail",
                 check="CloudTrail Encryption",
-                check_key="encryption",
+                check_key="kms_encryption",
                 resource="account",
                 status="FAIL",
                 severity="Medium",
