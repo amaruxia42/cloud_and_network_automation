@@ -1,7 +1,7 @@
 from typing import List
 from botocore.exceptions import  ClientError
 from shared.aws_clients import get_cloudtrail
-from shared.report import AuditFinding, ServicesAuditReport
+from shared.report import AuditFinding
 from shared.logger import get_logger
 
 
@@ -34,7 +34,7 @@ def check_cloudtrail_exists(cloudtrail_client=None) -> List[AuditFinding]:
                 AuditFinding(
                     service="CloudTrail",
                     check="CloudTrail Status",
-                    check_key="does_trail_exist",
+                    check_key="cloudtrail_exists",
                     resource="account",
                     status="FAIL",
                     severity="High",
@@ -205,8 +205,7 @@ def check_log_validation(cloudtrail_client=None) -> List[AuditFinding]:
                         service="CloudTrail",
                         check="CloudTrail Log Validation",
                         check_key="log_validation",
-                        # Use the Trail Name or ARN as the resource for better tracking
-                        resource=trail.get("TrailARN"),
+                        resource=trail.get("TrailARN") or trail.get("Name") or "unknown",
                         status="FAIL",
                         severity="Medium",
                         details=f"Log file validation is disabled for trail: {trail.get('Name')}",
@@ -259,7 +258,7 @@ def check_trail_kms_encryption(cloudtrail_client=None) -> List[AuditFinding]:
                         service="CloudTrail",
                         check="CloudTrail Encryption",
                         check_key="encryption",
-                        resource=trail_name, # Specific resource
+                        resource=trail_name, 
                         status="FAIL",
                         severity="Medium",
                         details=f"Trail '{trail_name}' is not encrypted with a KMS Key (using default SSE-S3).",
