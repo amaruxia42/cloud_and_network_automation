@@ -21,7 +21,7 @@ Each AWS service is handled by a dedicated audit module, ensuring isolation and 
 
 - **Service Isolation:** Modules are decoupled; adding a new service audit (e.g., RDS) requires zero changes to existing modules.
 - **Compliance-as-Code:** Centralised mapping logic links Boto3 responses directly to **CIS AWS Foundations** and **NIST 800-53** controls.
-- **Parallel Execution:** Utilises Python's threading capabilities to audit large environments across multiple services simultaneously. 
+- **Parallel Execution:** Utilises Python's threading capabilities to audit large environments across multiple services simultaneously.
 - **Uniform Schema:** Regardless of the service, all findings are returned in a consistent, report-ready structure.
 
 ![AWS Toolkit Architecture](./aws_benchmark_toolkit.png)
@@ -61,7 +61,9 @@ network_and_cloud_automation/
 
 🚀 Getting Started
 
-📦 Requirements
+📦 Requirements & Prerequisites
+
+Note: Installation instructions for Python, Terraform and AWS CLI are beyond the scope of this README
 
 -   Python 3.13+: Utilises modern type hinting and performance improvements.
 
@@ -69,7 +71,7 @@ network_and_cloud_automation/
 
 -   AWS CLI: Configured with valid credentials and a default region.
 
--       Note: For security, it is highly recommended to use an IAM user or role with the managed ReadOnlyAccess policy.
+-  Note: For security, it is highly recommended to use an IAM user or role with the managed ReadOnlyAccess policy.
 
 🛠️ Installation
 
@@ -77,9 +79,7 @@ network_and_cloud_automation/
 
 ```bash
 
-git clone https://github.com/amaruxia42/cloud_and_network_automation.git
-
-cd cloud_and_network_automation
+git clone https://github.com/amaruxia42/cloud_and_network_automation.git && cd cloud_and_network_automation
 
 ```
 
@@ -89,7 +89,10 @@ cd cloud_and_network_automation
 
 ```bash
 
+# Create the environment
 python3 -m venv .venv
+
+# Activate the environment 
 source .venv/bin/activate
 
 ```
@@ -121,7 +124,7 @@ Targeted Audit (Specific Services):
 
 ```bash
 
-python3 -m cloud_security_automation.shared.audit_cli --services S3 IAM --format json
+python3 -m cloud_security_automation.shared.audit_cli --services s3 iam --format json
 
 ```
 
@@ -141,12 +144,16 @@ Supported Services: S3, DynamoDB, EC2, and VPC.
 
 ```bash
 
+# Navigate to the target service
+
 cd terraform/s3
+
+# Initialise the working directory  
 terraform init  
 
 ```
 
-2. Auto apply
+2. Deploy "Vulnerable" Infrastructure Apply the configuration to create test resources in your AWS account. The -auto-approve flag is used here for speed:
 
 ```bash
 
@@ -164,17 +171,16 @@ python3 -m cloud_security_automation.shared.audit_cli --services S3 IAM --format
 
 ```
 
-4. Audit results are saved into the Results folder from where the script was executed.
+4. Review Results Findings are automatically saved to the Results/ directory with a unique timestamp. You can verify the detection by checking the generated file:
 
 ```bash
 
-cloud_and_network_automation % python3 -m cloud_security_automation.shared.audit_cli --services S3 IAM --format json
-
-Results/aws_services_audit_results_30-01-2026-10:14:08.json
+# Example output location
+ls cloud_security_automation/shared/Results/
 
 ```
 
-5. Clean up 
+5. Clean Up (Teardown) To avoid unnecessary AWS costs, always destroy the test infrastructure once the audit is verified: 
 
 ```bash
 
