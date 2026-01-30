@@ -21,7 +21,7 @@ Each AWS service is handled by a dedicated audit module, ensuring isolation and 
 
 - **Service Isolation:** Modules are decoupled; adding a new service audit (e.g., RDS) requires zero changes to existing modules.
 - **Compliance-as-Code:** Centralised mapping logic links Boto3 responses directly to **CIS AWS Foundations** and **NIST 800-53** controls.
-- **Parallel Execution:** Utilises Python's threading capabilities to audit large environments across multiple services simultaneously.
+- **Parallel Execution:** Utilises Python's threading capabilities to audit large environments across multiple services simultaneously. 
 - **Uniform Schema:** Regardless of the service, all findings are returned in a consistent, report-ready structure.
 
 ![AWS Toolkit Architecture](./aws_benchmark_toolkit.png)
