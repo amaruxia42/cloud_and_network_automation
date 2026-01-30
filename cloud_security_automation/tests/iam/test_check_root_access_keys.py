@@ -1,7 +1,8 @@
 import pytest
 from botocore.exceptions import ClientError
 from botocore.stub import Stubber
-from shared.aws_clients import get_iam, BaseFinding
+from shared.aws_clients import get_iam 
+from shared.report import AuditFinding
 from aws_iam_audit.iam_audit import check_root_access_keys
 
 
@@ -43,7 +44,7 @@ def test_root_access_keys_present():
     assert len(findings) == 1
     finding = findings[0]
 
-    assert isinstance(finding, BaseFinding)
+    assert isinstance(finding, AuditFinding)
     assert finding.status == "FAIL"
     assert finding.severity == "Critical"
     assert finding.resource == "root"
