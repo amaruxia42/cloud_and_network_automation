@@ -1,5 +1,4 @@
 import pytest
-from botocore.exceptions import ClientError
 from shared.report import AuditFinding
 from aws_iam_audit.iam_audit import check_iam_user_mfa
 
@@ -37,4 +36,4 @@ def test_user_with_console_access_no_mfa():
     assert finding.resource == "alice"
     assert finding.status == "FAIL"
     assert finding.severity == "High"
-    #assert "no mfa" in finding.details.lower()
+    assert "no mfa" in finding.details.lower()
