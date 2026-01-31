@@ -1,7 +1,6 @@
 import pytest
-from botocore.exceptions import ClientError
 from botocore.stub import Stubber
-from shared.aws_clients import get_iam 
+from shared.aws_clients import get_iam
 from shared.report import AuditFinding
 from aws_iam_audit.iam_audit import check_root_access_keys
 
@@ -55,7 +54,7 @@ def test_root_access_keys_client_error():
     iam_client = get_iam()
     stubber = Stubber(iam_client)
 
-    iam_client.add_client_error(
+    stubber.add_client_error(
         "get_account_summary",
         service_error_code="AccessDenied",
         service_message="Access Denied"
