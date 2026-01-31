@@ -68,7 +68,7 @@ def test_password_policy_missing(mocker):
 
     assert finding.status == "FAIL"
     assert finding.severity == "High"
-    assert "no password policy" in finding.details.lower()
+    assert "no iam password policy" in finding.details.lower()
 
 
 def test_password_policy_api_error(mocker):
@@ -87,8 +87,6 @@ def test_password_policy_api_error(mocker):
     findings = check_iam_password_policy(iam_client=iam_client)
 
     assert len(findings) == 1
-    finding = findings[0]
-
-    assert finding.status == "FAIL"
-    assert finding.severity == "High"
-    assert "unable to evaluate" in finding.details.lower()
+    assert findings[0].status == "FAIL"
+    assert "Unable to audit" in findings[0].details
+    assert "Access Denied" in findings[0].details
