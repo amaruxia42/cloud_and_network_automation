@@ -18,9 +18,7 @@ def make_client_error(code="AccessDenied", message="Access denied"):
         operation_name="ListAccessKeys",
     )
 
-# ---------------------------------
-#           Tests
-# ---------------------------------
+# ----- Tests -----
 
 
 def test_user_with_no_access_key():
@@ -31,7 +29,7 @@ def test_user_with_no_access_key():
     }
 
     iam.list_access_keys.return_value = {
-        "AccessKeysMetadata": []
+        "AccessKeyMetadata": []
     }
 
     findings = check_iam_user_access_keys_rotation(iam)
@@ -47,7 +45,7 @@ def test_user_with_recent_access_key_passes():
     }
 
     iam.list_access_keys.return_value = {
-        "AccessKeysMetadata": [
+        "AccessKeyMetadata": [
             {
                 "AccessKeyId": "AKIRA123",
                 "CreateDate": days_ago(10),
@@ -68,7 +66,7 @@ def test_user_with_stale_access_key_passes():
     }
 
     iam.list_access_keys.return_value = {
-        "AccessKeysMetadata": [
+        "AccessKeyMetadata": [
             {
                 "AccessKeyId": "AKIRA0LD",
                 "CreateDate": days_ago(120),
@@ -85,7 +83,7 @@ def test_user_with_stale_access_key_passes():
     assert isinstance(finding, AuditFinding)
     assert finding.status == "FAIL"
     assert finding.severity == "High"
-    assert "rotated" in finding.details.lower()
+    assert "exceeds" in finding.details.lower()
     assert finding.resource == "sarah"
 
 
@@ -105,7 +103,7 @@ def test_user_with_multiple_keys_one_stale_fails():
             },
             {
                 "AccessKeyId": "AKIASTALE",
-                "CreateDate": days_ago(200),
+                "CreateDate": days_ago(120),
                 "Status": "Active"
             }
         ]
