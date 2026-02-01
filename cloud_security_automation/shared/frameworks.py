@@ -43,11 +43,11 @@ FRAMEWORKS = {
         "flow_logs": "CIS: 3.9, NIST AU-2, NIST AU-12"
     },
     "cloudtrail": {
-        "does_trail_exist": "CIS 2.1, NIST AU-2, AU-12",
+        "cloudtrail_exists": "CIS 2.1, NIST AU-2, AU-12",
         "multi_region": "CIS 2.2, NIST AU-2",
         "management_events": "CIS 2.4, NIST AU-12",
         "log_validation": "CIS 2.5, NIST AU-6",
-        "encryption": "CIS 2.7, NIST SC-12"
+        "kms_encryption": "CIS 2.7, NIST SC-12"
     },
 }
 
