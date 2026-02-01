@@ -217,22 +217,27 @@ def check_iam_password_policy(iam_client=None) -> List[AuditFinding]:
         policy = response.get("PasswordPolicy", {})
 
     except ClientError as e:
-        if e.response["Error"]["Code"] == "NoSuchEntity":
-            findings.append(
-                AuditFinding(
-                    service="IAM",
-                    check="IAM Password Policy",
-                    check_key="password_policy",
-                    resource="account",
-                    status="FAIL",
-                    severity="High",
-                    details="No IAM password policy is configured for this account",
-                )
-            )
-            return findings
+        error_code = e.response.get("Error", {}).get("Code")
+        if error_code == "NoSuchEntity":
+            details = "No IAM password policy is configured for this account"
+        elif error_code == "AccessDenied":
+            details = "Unable to audit password policy Access Denied"
+            print(details)
+        else:
+            details = f"Unexpected error auditing password policy: {error_code}"
 
-        # 🚨 Unexpected error
-        raise
+        findings.append(
+            AuditFinding(
+                service="IAM",
+                check="IAM Password Policy",
+                check_key="password_policy",
+                resource="account",
+                status="FAIL",
+                severity="High",
+                details=details,
+            )
+        )
+        return findings
 
     PASSWORD_POLICY_RULES = {
         "MinimumPasswordLength": lambda v: v >= 14,
