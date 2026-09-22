@@ -81,6 +81,9 @@ Note: Installation instructions for Python, Terraform and AWS CLI are beyond the
 
 git clone https://github.com/amaruxia42/cloud_and_network_automation.git 
 
+```
+
+```bash
 # Change into the cloned directory 
 cd cloud_and_network_automation
 
@@ -90,12 +93,17 @@ cd cloud_and_network_automation
 
 2. Environment Setup: Create and activate a virtual environment to manage dependencies locally:
 
+# Create the environment
+
 ```bash
 
-# Create the environment
 python3 -m venv .venv
 
+```
+
 # Activate the environment 
+
+```bash
 source .venv/bin/activate
 
 ```
