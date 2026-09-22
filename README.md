@@ -79,7 +79,10 @@ Note: Installation instructions for Python, Terraform and AWS CLI are beyond the
 
 ```bash
 
-git clone https://github.com/amaruxia42/cloud_and_network_automation.git && cd cloud_and_network_automation
+git clone https://github.com/amaruxia42/cloud_and_network_automation.git 
+
+# Change into the cloned directory 
+cd cloud_and_network_automation
 
 ```
 
@@ -167,7 +170,7 @@ terraform apply -auto-approve
 
 ```bash
 
-python3 -m cloud_security_automation.shared.audit_cli --services S3 IAM --format json
+python3 -m cloud_security_automation.shared.audit_cli --services <service> <services> --format json
 
 ```
 
@@ -194,9 +197,10 @@ terraform destroy
 
 Used primarily for IAM and CloudTrail logic where API mocking is more efficient than resource provisioning.
 
+Run tests in a directory 
 ```bash
 
-pytest
+pytest -v tests/
 
 ```
 
@@ -228,7 +232,7 @@ Findings are prioritised based on environmental impact:
 This tool is for auditing and educational purposes only. Always validate findings before applying changes in a production environment.
 Author
 
-Robert Wright Cloud/Network Security Enthusiast
+Robert Wright Cloud/Network Security Engineer
 
 GitHub: @amaruxia42
 License
