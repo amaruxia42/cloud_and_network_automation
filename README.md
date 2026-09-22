@@ -83,8 +83,10 @@ git clone https://github.com/amaruxia42/cloud_and_network_automation.git
 
 ```
 
+Change into the cloned directory
+
 ```bash
-# Change into the cloned directory 
+ 
 cd cloud_and_network_automation
 
 ```
@@ -93,7 +95,7 @@ cd cloud_and_network_automation
 
 2. Environment Setup: Create and activate a virtual environment to manage dependencies locally:
 
-# Create the environment
+Create the environment
 
 ```bash
 
@@ -101,7 +103,7 @@ python3 -m venv .venv
 
 ```
 
-# Activate the environment 
+Activate the environment 
 
 ```bash
 source .venv/bin/activate
