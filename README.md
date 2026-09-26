@@ -191,7 +191,7 @@ ls cloud_security_automation/shared/Results/
 5. Clean Up (Teardown) To avoid unnecessary AWS costs, always destroy the test infrastructure once the audit is verified: 
 
 ```bash
-terraform destroy
+terraform destroy -auto-approve
 
 ```
 
