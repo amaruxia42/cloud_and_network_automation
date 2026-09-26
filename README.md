@@ -90,7 +90,6 @@ git clone https://github.com/amaruxia42/cloud_and_network_automation.git
 Change into the cloned directory
 
 ```bash
- 
 cd cloud_and_network_automation
 
 ```
@@ -102,7 +101,6 @@ cd cloud_and_network_automation
 Create the environment
 
 ```bash
-
 python3 -m venv .venv
 
 ```
@@ -117,7 +115,6 @@ source .venv/bin/activate
 3. Install Dependencies: Install the toolkit in editable mode. This ensures that the shared and audit modules are correctly registered within your Python path:
 
 ```bash
-
 pip install -e .
 
 ```
@@ -132,7 +129,6 @@ The toolkit is executed as a module from the root directory. This ensures all in
 Full Audit (All Services):
 
 ```bash
-
 python3 -m cloud_security_automation.shared.audit_cli
 
 ```
@@ -140,7 +136,6 @@ python3 -m cloud_security_automation.shared.audit_cli
 Targeted Audit (Specific Services):
 
 ```bash
-
 python3 -m cloud_security_automation.shared.audit_cli --services s3 iam --format json
 
 ```
@@ -160,7 +155,6 @@ Supported Services: S3, DynamoDB, EC2, and VPC.
 1. Navigate to one of the services directories and initialise terraform:
 
 ```bash
-
 # Navigate to the target service
 
 cd terraform/s3
@@ -173,7 +167,6 @@ terraform init
 2. Deploy "Vulnerable" Infrastructure Apply the configuration to create test resources in your AWS account. The -auto-approve flag is used here for speed:
 
 ```bash
-
 terraform apply -auto-approve
 
 ```
@@ -183,7 +176,6 @@ terraform apply -auto-approve
     Execute the toolkit against the "vulnerable" infrastructure to confirm detection accuracy.
 
 ```bash
-
 python3 -m cloud_security_automation.shared.audit_cli --services <service> <services> --format json
 
 ```
@@ -191,7 +183,6 @@ python3 -m cloud_security_automation.shared.audit_cli --services <service> <serv
 4. Review Results Findings are automatically saved to the Results/ directory with a unique timestamp. You can verify the detection by checking the generated file:
 
 ```bash
-
 # Example output location
 ls cloud_security_automation/shared/Results/
 
@@ -200,7 +191,6 @@ ls cloud_security_automation/shared/Results/
 5. Clean Up (Teardown) To avoid unnecessary AWS costs, always destroy the test infrastructure once the audit is verified: 
 
 ```bash
-
 terraform destroy
 
 ```
@@ -213,7 +203,6 @@ Used primarily for IAM and CloudTrail logic where API mocking is more efficient 
 
 Run tests in a directory 
 ```bash
-
 pytest -v tests/
 
 ```
