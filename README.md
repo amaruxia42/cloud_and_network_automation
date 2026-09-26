@@ -24,7 +24,7 @@ Each AWS service is handled by a dedicated audit module, ensuring isolation and 
 - **Parallel Execution:** Utilises Python's threading capabilities to audit large environments across multiple services simultaneously.
 - **Uniform Schema:** Regardless of the service, all findings are returned in a consistent, report-ready structure.
 
-![AWS Toolkit Architecture](./aws_benchmark_toolkit.png)
+![AWS Toolkit Architecture](/network_and_cloud_automation/docs/diagrams/aws_benchmark_toolkit.png)
 
 ---
 
@@ -46,6 +46,10 @@ network_and_cloud_automation/
 │   │   ├── logger.py            # Structured logging
 │   │   └── report.py            # JSON/CSV generator
 │   └── tests/                   # Pytest suite
+├── docs/
+│   ├── adrs/
+│   └── diagrams/
+│       
 ├── terraform/                   # IaC for Audit Verification
 │   ├── dynamodb/
 │   ├── ec2/
