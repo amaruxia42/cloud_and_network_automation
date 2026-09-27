@@ -112,15 +112,14 @@ source .venv/bin/activate
 
 ```
 
-3. Install Dependencies: Install the toolkit in editable mode. This ensures that the shared and audit modules are correctly registered within your Python path:
+3. Install Dependencies: Install the toolkit and its dependencies from the requirements file. This ensures that the shared and audit modules are correctly registered within your Python path, along with all required package extras:
 
 ```bash
-pip install -e .
+pip install -r requirements.txt
 
 ```
 
 ---
-
 
 💻 Usage
 
