@@ -1,10 +1,10 @@
 annotated-types==0.7.0
-boto3==1.42.34
+boto3[crt]==1.42.34
 botocore==1.42.34
 iniconfig==2.3.0
 jmespath==1.1.0
-# Editable install with no version control (network_and_cloud_automation==0.1.0)
--e /Users/amaru-xia/Documents/Cloud Projects/network_and_cloud_automation
+# Editable install of this package
+-e .
 packaging==26.0
 pluggy==1.6.0
 pydantic==2.12.5
